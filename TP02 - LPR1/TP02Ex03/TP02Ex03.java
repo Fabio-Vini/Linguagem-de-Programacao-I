@@ -27,15 +27,28 @@ public class TP02Ex03 {
 		Scanner myObj = new Scanner (System.in);
 		
 		int maior = 0, soma = 0, digito = 0 ;
-		double media;
-		int numero;
+		double media, media_positivo,media_negativo;
+		int numero, positivo = 0, negativo = 0;
+
 		int menor = Integer.MAX_VALUE;
 		
 		
+      do {
 		System.out.println("Informe a quantidades de numeros ");
 			numero = myObj.nextInt();
+
+			if (numero <= 0 || numero >= 20) {
+                System.out.println(" Valor inválido! Digite um número entre 1 e 19.\n");
+            }
 		
-		for(int i = 0; i < numero; i++)
+	  } while (numero <= 0 || numero >= 20);
+
+
+
+	  
+	
+		
+		for(int i = 1; i <= numero; i++)
 			
 		
 		{
@@ -49,11 +62,26 @@ public class TP02Ex03 {
 		}  if (digito < menor){
 			menor = digito;
 		}
+
+		if (digito > 0) {
+			positivo++;
+		}else{
+			negativo++ ;
+		}
+
+
+
+
 		
 		soma = soma + digito;
 		}
 		
-		media = soma / 10.0;
+		media = (double) soma /  numero;
+
+		media_positivo =  (double) positivo / numero;
+		media_negativo = (double) negativo / numero;
+
+
 		
 		
 		
@@ -61,6 +89,9 @@ public class TP02Ex03 {
 		System.out.println("Menor numero digitado: " + menor);
 		System.out.println("Soma dos valores: " + soma);
 		System.out.println("Media dos valores: " + media);
+
+		System.out.println("Positivo: " + media_positivo * 100 + "%");
+		System.out.println("negativo: " + media_negativo * 100 + "%" );
 		
 		
 		
