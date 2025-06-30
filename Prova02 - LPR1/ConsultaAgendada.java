@@ -35,9 +35,11 @@ public class ConsultaAgendada {
     public ConsultaAgendada (int h, int mi, int s, int d, int m, int a, String p,String nM)
     {
      this.data = new Data(d, m, a);
-     this.hora = new Hora(h, m, s);
+     this.hora = new Hora(h, mi, s);
      this.nomePaciente = p;
      this.nomeMedico = nM;
+     quantidade++;
+
 
 }
 

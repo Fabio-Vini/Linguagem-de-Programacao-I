@@ -1,20 +1,20 @@
 
 --- Propriedades de p1 ---
 Data: 01/07/25
-Hora: 10:07:00
+Hora: 10:30:00
 Paciente: João Silva
 Médico: Dr. Pedro
 
 --- Propriedades de p2 ---
-Data: 05/07/25
-Hora: 13:30:00
+Data: 25/07/25
+Hora: 15:00:00
 Paciente: Kaua Felipe
 Médico: Roberto
 
 --- Propriedades de p1 após alterações ---
 Data: 10/07/25
-Hora: 14:30:00
-Paciente: Fabio Vinicius
-Médico: Ana Beatriz
+Hora: 15:30:00
+Paciente: Fabio
+Médico: Ana
 
-Quantidade total de consultas agendadas: 1
+Quantidade total de consultas agendadas: 2
